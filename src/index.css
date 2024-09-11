@@ -1,5 +1,10 @@
 @import 'reset-css/reset.css';
 
+@font-face {
+    font-family: 'rick-font';
+    src: url('../public/fonts/get_schwifty.ttf');
+}
+
 #root{
     min-height: 100vh;
     display: flex;

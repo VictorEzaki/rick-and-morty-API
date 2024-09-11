@@ -26,22 +26,22 @@ export default function () {
             <div id="genero">
                 <h3 id='filter-gender'>Gênero</h3>
                 <label htmlFor="feminino">
-                    <input type="radio" id='unknow' value='feminino' name='gender' />
+                    <input type="radio" id='woman' value='feminino' name='gender' />
                     Feminino
                 </label>
                 
-                <label htmlFor="desconhecido">
-                    <input type="radio" id='unknow' value='desconhecido' name='status' />
-                    Desconhecido
+                <label htmlFor="masculino">
+                    <input type="radio" id='man' value='masculino' name='gender' />
+                    Masculino
+                </label>
+
+                <label htmlFor="sem-genero">
+                    <input type="radio" id='sem-genero' value='sem-genero' name='gender' />
+                    Sem gênero
                 </label>
 
                 <label htmlFor="desconhecido">
-                    <input type="radio" id='unknow' value='desconhecido' name='status' />
-                    Desconhecido
-                </label>
-
-                <label htmlFor="desconhecido">
-                    <input type="radio" id='unknow' value='desconhecido' name='status' />
+                    <input type="radio" id='unknow' value='desconhecido' name='gender' />
                     Desconhecido
                 </label>
             </div>

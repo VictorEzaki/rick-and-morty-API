@@ -1,0 +1,16 @@
+#nav{
+    height: 20rem;
+    min-width: 10rem;
+    max-width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    border-right: 1px solid darkgray;
+}
+
+#nav div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
