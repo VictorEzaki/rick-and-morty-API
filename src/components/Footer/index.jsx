@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer id='footer'>
             <span>
-                &copy; Todos os direitos reservador por Victor Ezaki
+                &copy; Todos os direitos reservado por Victor Ezaki
             </span>
         </footer>
     )

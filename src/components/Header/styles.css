@@ -6,5 +6,8 @@
 
 #header-title{
     font-size: 4rem;
-    color: white;
+    color: #00B5CC;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #97FB9B;
+    font-family: rick-font;
 }
