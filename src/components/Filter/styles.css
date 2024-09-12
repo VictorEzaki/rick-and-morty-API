@@ -1,4 +1,4 @@
-#nav{
+#filter{
     height: 20rem;
     min-width: 10rem;
     max-width: 10rem;
@@ -9,7 +9,7 @@
     border-right: 1px solid darkgray;
 }
 
-#nav div{
+#filter div{
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
