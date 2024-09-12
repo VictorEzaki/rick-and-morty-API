@@ -1,13 +1,19 @@
 #header{
-    background-color: #3c3e44;
-    padding: 2rem;
-    text-align: center;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+}
+#header h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-#header-title{
-    font-size: 4rem;
-    color: #00B5CC;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #97FB9B;
-    font-family: rick-font;
+#header a:hover{
+    opacity: 80%;
+    transition: 0.5s;
+}
+
+#header-title img{
+    height: 6rem;
 }

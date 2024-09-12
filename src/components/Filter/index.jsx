@@ -2,23 +2,23 @@ import './styles.css'
 
 export default function () {
     return (
-        <nav id='nav'>
-            <h2 id="nav-filter">Filtros</h2>
+        <div id='filter'>
+            <h2 id="filter-title">Filtros</h2>
             <div id="status">
                 <h3 id='filter-status'>Status</h3>
 
                 <label htmlFor="vivo">
-                    <input type="radio" id='alive' value='vivo' name='status' />
+                    <input type="radio" id='vivo' value='vivo' name='status' />
                     Vivo
                 </label>
 
                 <label htmlFor="morto">
-                    <input type="radio" id='dead' value='morto' name='status' />
+                    <input type="radio" id='morto' value='morto' name='status' />
                     Morto
                 </label>
 
                 <label htmlFor="desconhecido">
-                    <input type="radio" id='unknow' value='desconhecido' name='status' />
+                    <input type="radio" id='desconhecido' value='desconhecido' name='status' />
                     Desconhecido
                 </label>
             </div>
@@ -26,12 +26,12 @@ export default function () {
             <div id="genero">
                 <h3 id='filter-gender'>Gênero</h3>
                 <label htmlFor="feminino">
-                    <input type="radio" id='woman' value='feminino' name='gender' />
+                    <input type="radio" id='feminino' value='feminino' name='gender' />
                     Feminino
                 </label>
                 
                 <label htmlFor="masculino">
-                    <input type="radio" id='man' value='masculino' name='gender' />
+                    <input type="radio" id='masculino' value='masculino' name='gender' />
                     Masculino
                 </label>
 
@@ -40,11 +40,11 @@ export default function () {
                     Sem gênero
                 </label>
 
-                <label htmlFor="desconhecido">
+                <label htmlFor="unknow">
                     <input type="radio" id='unknow' value='desconhecido' name='gender' />
                     Desconhecido
                 </label>
             </div>
-        </nav>
+        </div>
     )
 }
