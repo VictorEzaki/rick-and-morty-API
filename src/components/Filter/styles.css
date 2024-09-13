@@ -6,11 +6,34 @@
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    border-right: 1px solid darkgray;
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    grid-area: filter;
 }
 
 #filter div{
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
+}
+#filter div h3{
+    color: black;
+}
+
+#filter div .filtro-ativo{
+    opacity: 90%;
+    color: white;
+}
+
+#filter div span{
+    background-color: #222222;
+    color: white;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 12px;
+}
+#filter div span:hover{
+    cursor: pointer;
 }

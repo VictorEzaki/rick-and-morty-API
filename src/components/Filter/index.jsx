@@ -1,49 +1,68 @@
 import './styles.css'
 
-export default function () {
+export default function Filter({ busca, setBusca }) {
+
+    function montarFiltro(type, value) {
+        const filtros = new URLSearchParams(busca);
+        const filtro = filtros.get(type)
+
+        if (filtro === value) {
+            filtros.delete(type)
+        } else {
+            filtros.set(type, value)
+        }
+
+        setBusca("&" + filtros.toString())
+    }
+
+    function marcarFiltro(type, value) {
+        const filtros = new URLSearchParams(busca);
+        const filtro = filtros.get(type);
+
+        if (filtro === value) {
+            return 'filtro-ativo';
+        }
+        return '';
+    }
+
+
+
     return (
         <div id='filter'>
             <h2 id="filter-title">Filtros</h2>
             <div id="status">
                 <h3 id='filter-status'>Status</h3>
 
-                <label htmlFor="vivo">
-                    <input type="radio" id='vivo' value='vivo' name='status' />
+                <span className={marcarFiltro('status', 'live')} onClick={() => montarFiltro('status', 'live')}>
                     Vivo
-                </label>
+                </span>
 
-                <label htmlFor="morto">
-                    <input type="radio" id='morto' value='morto' name='status' />
+                <span className={marcarFiltro('status', 'dead')} onClick={() => montarFiltro('status', 'dead')}>
                     Morto
-                </label>
+                </span>
 
-                <label htmlFor="desconhecido">
-                    <input type="radio" id='desconhecido' value='desconhecido' name='status' />
+                <span className={marcarFiltro('status', 'unknown')} onClick={() => montarFiltro('status', 'unknown')}>
                     Desconhecido
-                </label>
+                </span>
             </div>
 
             <div id="genero">
                 <h3 id='filter-gender'>Gênero</h3>
-                <label htmlFor="feminino">
-                    <input type="radio" id='feminino' value='feminino' name='gender' />
+                <span className={marcarFiltro('gender', 'female')} onClick={() => montarFiltro('gender', 'female')}>
                     Feminino
-                </label>
-                
-                <label htmlFor="masculino">
-                    <input type="radio" id='masculino' value='masculino' name='gender' />
+                </span>
+
+                <span className={marcarFiltro('gender', 'male')} onClick={() => montarFiltro('gender', 'male')}>
                     Masculino
-                </label>
+                </span>
 
-                <label htmlFor="sem-genero">
-                    <input type="radio" id='sem-genero' value='sem-genero' name='gender' />
+                <span className={marcarFiltro('gender', 'genderless')} onClick={() => montarFiltro('gender', 'genderless')}>
                     Sem gênero
-                </label>
+                </span>
 
-                <label htmlFor="unknow">
-                    <input type="radio" id='unknow' value='desconhecido' name='gender' />
+                <span className={marcarFiltro('gender', 'unknown')} onClick={() => montarFiltro('gender', 'unknown')}>
                     Desconhecido
-                </label>
+                </span>
             </div>
         </div>
     )

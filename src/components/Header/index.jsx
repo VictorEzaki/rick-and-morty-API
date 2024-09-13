@@ -8,9 +8,8 @@ export default function Header() {
         <>
             <header id="header">
                 <Link to="/">
-                    <img id='home' src={buttonHome} alt="" />
+                    <img src={rickHeader} alt="Título Rick and Morty" />
                 </Link>
-                <h1 id="header-title"><img src={rickHeader} alt="Título Rick and Morty" /></h1>
             </header>
         </>
     )
