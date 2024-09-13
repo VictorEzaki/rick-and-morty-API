@@ -1,0 +1,18 @@
+#main-api{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    grid-auto-rows: minmax(50px, auto);
+    padding: 10px;
+    grid-template-areas: 
+        "pagination pagination pagination pagination"
+        "filter list-api list-api list-api";
+}
+
+.list-api{
+    grid-area: list-api;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3rem;
+}
